@@ -1,6 +1,6 @@
 API para el centro medico Galenos
 
----
+
 ## Tabla de Contenidos:
 
 - [Prerrequisitos](#uno)
@@ -12,7 +12,7 @@ API para el centro medico Galenos
     - [Dependencias](#siete)
     - [Levantar API con Docker](#ocho)
     - [Consumir API](#nueve)
----
+
 <a id="uno"></a>
 ## Prerrequisitos:
 Para poder levantar esta API y consumirla es necesario cumplir con los prerrequisitos para proceder a instalar las dependencias y correr el código fuente.
@@ -47,7 +47,7 @@ wsl --update
 #### 3. Docker:
 Para levantar la API necesitaremos Docker Desktop. El instalador se puede descargar desde su pagina oficial: [Docker.com](https://www.docker.com/products/docker-desktop/)
 
----
+
 <a id="cinco"></a>
 ## Instrucciones de uso: <a name="instrucciones"></a>
 Para poder levantar esta API y consumirla es necesario cumplir con los prerrequisitos para proceder a instalar las dependencias y correr el código fuente.

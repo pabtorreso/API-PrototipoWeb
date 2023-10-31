@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Hacer una solicitud a la API
-    fetch("http://localhost:5000/medicos")
+    fetch("http://181.74.128.238:5000/medicos")
         .then(response => response.json())
         .then(data => {
             const medicosTableBody = document.getElementById("medicos-table-body");

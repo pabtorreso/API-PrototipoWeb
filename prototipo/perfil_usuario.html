@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="light">
+
 <head>
     <!--==========================================================-->
     <!--META-TAGS->
@@ -32,8 +33,27 @@
     <!--<link href="css/" rel="stylesheet">-->
     <!-- Estilos CSS personalizados -->
     <style>
+        body {
+            background-color: #f0f0f0; /* Fondo gris claro */
+        }
+        .navbar {
+            background-color: #53CDCD; /* Azul oscuro para la barra de navegación */
+            color: white;
+        }
+        .btn-primary {
+            background-color: #53CDCD; /* Azul oscuro para el botón */
+            border-color: #53CDCD;
+        }
+        .btn-primary:hover {
+            background-color: #53CDCD; /* Color más oscuro al pasar el ratón */
+            border-color: #53CDCD;
+        }
+        .table {
+            background-color: white; /* Fondo blanco para la tabla */
+        }
     </style>
 </head>
+
 <body>
     <!--==========================================================-->
     <!--ENCABEZADO-->
@@ -54,17 +74,17 @@
                         </div>
                         <div class="col-sm-6 d-flex justify-content-center align-items-center">
                             <form class="d-flex mx-2 w-90 justify-content-center align-items-center" role="search">
-                          
+                               
                             </form>
                         </div>
                         <div class="col-sm-3 d-flex justify-content-center align-items-center mb-1">
                             <div class="d-flex ps-3 justify-content-center align-items-center">
-                                <a class="ingresar text-decoration-none" href="perfil_usuario.html">
+                                <a class="ingresar text-decoration-none">
                                     <button type="button" class="btn border-0 ps-0 fs-5 d-flex text-center mt-1"
-                                        style="color: rgb(255, 255, 255);">mcardenasi@centromedicogalenos.cl
-                                        <i class="bi bi-person-fill d-flex ps-1" style="font-size: 30px;color: rgb(255, 255, 255);">
-                                        </i>
-                                    </button>
+                                    style="color: rgb(255, 255, 255);">mcardenasi@centromedicogalenos.cl
+                                    <i class="bi bi-person-fill d-flex ps-1" style="font-size: 30px;color: rgb(255, 255, 255);">
+                                    </i>
+                                </button>
                                 </a>
                                 <div class="vr ms-3 me-4 p-0 mt-3" style="color: rgb(255, 255, 255);height: 25px;"></div>
                                 <div class="dropdown bd-mode-toggle">
@@ -112,12 +132,13 @@
                 <ul class="collapse navbar-collapse nav nav-tabs border-bottom-0 justify-content-center align-items-center"
                     style="font-size: large;" id="navbarTogglerDemo01">
                     <li class="nav-item px-1 fw-medium">
-                      <a class="nav-link" href="#" style="color: white;">Médicos Disponibles</a>
-                  </li>
+                        <a class="nav-link" href="#" style="color: white;">Médicos Disponibles</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <!--==========================================================-->
     <!-- PRINCIPAL -->
     <!--==========================================================-->
@@ -126,27 +147,27 @@
             <!-- Contenido -->
             <div class="contenido px-3 py-4 mt-3 bg-body-secondary rounded shadow-sm">
                 <!-- Título y línea divisora -->
-                <h3 class="py-3 border-bottom">Listado de Médicos</h3>
-                <div class="table-responsive rounded">
-                    <table class="table rounded shadow-sm" style="overflow: hidden;">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Nombre</th>
-                                <th>Disponibilidad</th>
-                                <th>Especialidad</th>
-                            </tr>
-                        </thead>
-                        <tbody id="medicos-table-body">
-                            <!-- Aquí se agregarán las filas de médicos con JavaScript -->
-                        </tbody>
-                    </table>
+                <h3 class="py-3 border-bottom">Perfil de Usuario</h3>
+                <div class="perfil">
+                    <h2>Nombre: Mariella Cárdenas Inostroza</h2>
+                    <p>Cargo: Secretaria</p>
+                    <p>Email: <a href="mailto:mcardenasi@centromedicogalenos.cl">mcardenasi@centromedicogalenos.cl</a></p>
                 </div>
-                <!-- Botón "Crear agenda" -->
-                <button type="button" class="btn btn-primary mt-3" id="crear-agenda">Crear agenda</button>
+                <!-- Botón "Crear agenda de médico" -->
+                <div class="agenda-button">
+                    <button type="button" class="btn btn-primary mt-3">
+                        <a href="index.html" style="color: white; text-decoration: none;">Crear agenda de médico</a>
+                    </button>
+                </div>
+                <div class="contrasena-button">
+                    <button type="button" class="btn btn-primary mt-3">
+                        <a style="color: white; text-decoration: none;">Cambiar Contraseña</a>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
+
     <!--==========================================================-->
     <!--EXTRAS-->
     <!--==========================================================-->
@@ -156,6 +177,7 @@
             <a href="#"><i class="bi bi-arrow-up-circle-fill" style="font-size: 45px;color: #53CDCD;"></i></a>
         </button>
     </div>
+
     <!--PIE DE PAGINA-->
     <footer>
         <!--SUBIR-->
@@ -175,7 +197,7 @@
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="acerca.html" class="link-info link-underline-opacity-0">Acerca de</a></li>
                             <li class="mb-2"><a href="faq.html" class="link-info link-underline-opacity-0">Preguntas frecuentes</a></li>
-                            <li class="mb-2"><a href="contacto.html" class="link-info link-underline-opacity-0">Contacto</a></li>
+                            <li class="mb-2"><a href="contacto.html" class "link-info link-underline-opacity-0">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="col-4 col-lg-2 offset-lg-1">
@@ -196,7 +218,7 @@
                         <a class="instagram mx-2" href="#">
                             <i class="bi bi-instagram" style="font-size: 25px;color: rgb(255, 255, 255);"></i>
                         </a>
-                        <a class "facebook mx-2" href="#">
+                        <a class="facebook mx-2" href="#">
                             <i class="bi bi-facebook" style="font-size: 25px;color: rgb(255, 255, 255);"></i>
                         </a>
                         <a class="twitter mx-2" href="#">
@@ -216,5 +238,8 @@
             </span>
         </div>
     </footer>
-</body>
-</html>
+</
+
+
+
+
